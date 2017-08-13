@@ -1,0 +1,6 @@
+Flask
+Flask-Script
+jinja2
+peewee
+flask_peewee
+PyMySQL

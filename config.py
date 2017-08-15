@@ -13,9 +13,9 @@ class Config(object):
     DATABASE = {
         'name': 'crontabpy',
         'engine': 'peewee.MySQLDatabase',
-        'host': 'localhost',
+        'host': '10.57.17.33',
         'user': 'root',
-        'passwd': '123456789',
+        'passwd': '123456',
     }
 
 

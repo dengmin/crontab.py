@@ -22,7 +22,7 @@ class Job(Base):
     cron_type = IntegerField()
     cron_express = CharField()
     run_model = IntegerField(help_text='串行 并行')
-    runas = CharField(help_text='跑任务的用户')
+    runas = CharField(help_text='执行任务的用户')
     timeout = IntegerField(help_text='任务超时时间')
     deleted = BooleanField(help_text='任务执行完成后是否删除')
     redo = BooleanField(help_text='任务运行失败是否重新执行')

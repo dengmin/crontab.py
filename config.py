@@ -10,12 +10,14 @@ class Config(object):
 
     SECRET_KEY = "agarywr34^^23gy!"
 
+    LOG_FOLDER = '/var/log/crontabpy/'
+
     DATABASE = {
         'name': 'crontabpy',
         'engine': 'peewee.MySQLDatabase',
-        'host': '10.57.17.33',
+        'host': '127.0.0.1',
         'user': 'root',
-        'passwd': '123456',
+        'passwd': '123456789',
     }
 
 

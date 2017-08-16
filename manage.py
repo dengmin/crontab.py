@@ -1,16 +1,7 @@
 
-from flask import Flask
-from flask_peewee.db import Database
-from app.scheduler import Scheduler
-app = Flask(__name__)
-app.config.from_object('config.Dev')
-
-db = Database(app)
-
-app.scheduler = Scheduler()
-app.scheduler.start()
-
-from app.views import *
+from app import create_app
+from config import Dev
+app = create_app(Dev)
 
 if __name__ == '__main__':
     app.run(port=8080)

@@ -8,11 +8,12 @@ class Base(db.Model):
     gmt_update = DateTimeField(default=datetime.datetime.now)
 
 class User(Base):
-    name = CharField()
-    salt = CharField()
-    password = CharField()
+    username = CharField(unique=True)
     realname = CharField()
-    email = CharField()
+    password = CharField()
+    email = CharField(unique=True)
+    active = BooleanField()
+    admin = BooleanField(default=False)
     about_me = CharField()
 
 class Job(Base):

@@ -7,3 +7,4 @@ PyMySQL
 APscheduler
 six
 redis
+nose
